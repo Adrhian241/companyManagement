@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "employee.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -17,7 +18,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButtonAdd_clicked();
+
 private:
     Ui::MainWindow *ui;
+    std::vector<Employee> employeeList; // Lista pracowników
+    void updateEmployeeList();
 };
 #endif // MAINWINDOW_H

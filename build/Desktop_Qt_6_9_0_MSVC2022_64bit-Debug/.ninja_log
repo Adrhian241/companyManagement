@@ -1,0 +1,18 @@
+# ninja log v6
+53	714	7688260400173730	companyMenagment_autogen/timestamp	783f4d36becc56df
+6007	6573	7688260454137444	companyMenagment.exe	5d6758a2feca04f1
+53	714	7688260400173730	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+734	5984	7688260401419221	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
+53	714	7688260400173730	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
+53	714	7688260400173730	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+729	6006	7688260401363688	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
+724	5908	7688260401311886	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
+333	6655	7688296284114877	companyMenagment_autogen/timestamp	783f4d36becc56df
+333	6655	7688296284114877	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+333	6655	7688296284114877	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
+333	6655	7688296284114877	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+6660	34930	7688296306580016	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
+6775	35134	7688296307731787	CMakeFiles/companyMenagment.dir/employee.cpp.obj	2079f6738deaf033
+6759	35180	7688296307576873	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
+6766	35305	7688296307646801	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
+35306	36372	7688296593034533	companyMenagment.exe	7fdb066cfec89938
