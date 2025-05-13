@@ -1,18 +1,18 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment",
+	"BUILD_DIR" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/malym/Documents/companyManagement",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/CMakeLists.txt",
-		"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"C:/Users/malym/Documents/companyManagement/CMakeLists.txt",
+		"C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -25,7 +25,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake",
-		"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
+		"C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
 		"C:/Qt/6.9.0/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
@@ -340,28 +340,34 @@
 		"C:/Qt/6.9.0/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment",
+	"CMAKE_SOURCE_DIR" : "C:/Users/malym/Documents/companyManagement",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/deps",
+	"DEP_FILE" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "companyMenagment_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.h",
+			"C:/Users/malym/Documents/companyManagement/addEmployeeDialog.h",
+			"MU",
+			"EWIEGA46WW/moc_addEmployeeDialog.cpp",
+			null
+		],
+		[
+			"C:/Users/malym/Documents/companyManagement/employee.h",
 			"MU",
 			"EWIEGA46WW/moc_employee.cpp",
 			null
 		],
 		[
-			"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.h",
+			"C:/Users/malym/Documents/companyManagement/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -405,27 +411,24 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/companyMenagment_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/companyMenagment_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.9.0/msvc2022_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.9.0/msvc2022_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 9,
-	"SETTINGS_FILE" : "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/companyMenagment_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/companyMenagment_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.cpp",
+			"C:/Users/malym/Documents/companyManagement/addEmployeeDialog.cpp",
 			"MU",
 			null
 		],
+		[ "C:/Users/malym/Documents/companyManagement/employee.cpp", "MU", null ],
+		[ "C:/Users/malym/Documents/companyManagement/main.cpp", "MU", null ],
 		[
-			"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/main.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.cpp",
+			"C:/Users/malym/Documents/companyManagement/mainwindow.cpp",
 			"MU",
 			null
 		]

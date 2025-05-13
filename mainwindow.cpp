@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "employee.h"
+#include "addEmployeeDialog.h"
 #include <QMessageBox>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,14 +16,17 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_pushButtonAdd_clicked()
 {
-    QString name = ui->lineEditName->text();
-    QString surname = ui->lineEditSurname->text();
+    AddEmployeeDialog dialog(this);
+    if(dialog.exec() == QDialog::Accepted){
+    QString name = dialog.getName();
+    QString surname = dialog.getSurname();
 
     if(name.isEmpty()|| surname.isEmpty())
     {
         QMessageBox::warning(this, "Błąd", "Imię i nazwisko nie mogą być puste.");
         return;
     }
+
     Employee newEmployee(name, surname);
 
     // Dodawanie pracownika do listy
@@ -30,10 +34,10 @@ void MainWindow::on_pushButtonAdd_clicked()
 
     // Aktualizacja QListWidget
     updateEmployeeList();
-
+    }
     // Czyszczenie pól tekstowych
-    ui->lineEditName->clear();
-    ui->lineEditSurname->clear();
+    //ui->lineEditName->clear();
+    //ui->lineEditSurname->clear();
 }
 void MainWindow::updateEmployeeList()
 {

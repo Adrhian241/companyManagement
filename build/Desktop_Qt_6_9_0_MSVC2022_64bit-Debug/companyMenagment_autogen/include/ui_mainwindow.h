@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -26,8 +25,6 @@ public:
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonDelete;
     QListWidget *listWidget;
-    QLineEdit *lineEditName;
-    QLineEdit *lineEditSurname;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -45,12 +42,6 @@ public:
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
         listWidget->setGeometry(QRect(310, 170, 256, 192));
-        lineEditName = new QLineEdit(centralwidget);
-        lineEditName->setObjectName("lineEditName");
-        lineEditName->setGeometry(QRect(310, 60, 113, 28));
-        lineEditSurname = new QLineEdit(centralwidget);
-        lineEditSurname->setObjectName("lineEditSurname");
-        lineEditSurname->setGeometry(QRect(310, 110, 113, 28));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
