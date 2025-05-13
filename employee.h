@@ -11,8 +11,6 @@ public:
     Employee();
     Employee(QString name,QString surname);
     ~Employee();
-    //void setName();
-    //void setSurname();
     QString getName();
     QString getSurname();
 

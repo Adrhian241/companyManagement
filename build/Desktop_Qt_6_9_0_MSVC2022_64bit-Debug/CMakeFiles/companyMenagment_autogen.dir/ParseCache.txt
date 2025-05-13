@@ -163,8 +163,8 @@ C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.h
  mdp:C:/Qt/6.9.0/msvc2022_64/include/QtWidgets/qwidget.h
  mdp:C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.h
  mdp:C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.h
-C:/Users/Laptop HP Elitebook/Documents/companyMenagment/main.cpp
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.cpp
  uic:./ui_mainwindow.h
+C:/Users/Laptop HP Elitebook/Documents/companyMenagment/main.cpp
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.h
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.cpp

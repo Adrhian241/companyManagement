@@ -38,19 +38,19 @@ public:
         centralwidget->setObjectName("centralwidget");
         pushButtonAdd = new QPushButton(centralwidget);
         pushButtonAdd->setObjectName("pushButtonAdd");
-        pushButtonAdd->setGeometry(QRect(160, 210, 83, 29));
+        pushButtonAdd->setGeometry(QRect(102, 210, 141, 29));
         pushButtonDelete = new QPushButton(centralwidget);
         pushButtonDelete->setObjectName("pushButtonDelete");
-        pushButtonDelete->setGeometry(QRect(160, 270, 83, 29));
+        pushButtonDelete->setGeometry(QRect(102, 270, 141, 29));
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
         listWidget->setGeometry(QRect(310, 170, 256, 192));
         lineEditName = new QLineEdit(centralwidget);
         lineEditName->setObjectName("lineEditName");
-        lineEditName->setGeometry(QRect(310, 30, 113, 28));
+        lineEditName->setGeometry(QRect(310, 60, 113, 28));
         lineEditSurname = new QLineEdit(centralwidget);
         lineEditSurname->setObjectName("lineEditSurname");
-        lineEditSurname->setGeometry(QRect(310, 70, 113, 28));
+        lineEditSurname->setGeometry(QRect(310, 110, 113, 28));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -61,8 +61,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "Dodaj pracownika", nullptr));
+        pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 pracownika", nullptr));
     } // retranslateUi
 
 };
