@@ -20,14 +20,15 @@ void MainWindow::on_pushButtonAdd_clicked()
     if(dialog.exec() == QDialog::Accepted){
     QString name = dialog.getName();
     QString surname = dialog.getSurname();
-
+    QString position = dialog.getPosition();
+    int age = dialog.getAge();
     if(name.isEmpty()|| surname.isEmpty())
     {
         QMessageBox::warning(this, "Błąd", "Imię i nazwisko nie mogą być puste.");
         return;
     }
 
-    Employee newEmployee(name, surname);
+    Employee newEmployee(name, surname,age,position);
 
     // Dodawanie pracownika do listy
     employeeList.push_back(newEmployee);
@@ -46,7 +47,7 @@ void MainWindow::updateEmployeeList()
     // Iterujemy po liście pracowników i dodajemy ich do QListWidget
     for (size_t i = 0; i < employeeList.size(); ++i) {
         Employee employee = employeeList[i]; // Tworzymy kopię elementu
-        QString displayText = employee.getName() + " " + employee.getSurname();
+        QString displayText = employee.getName() + " " + employee.getSurname() + " " + QString::number(employee.getAge()) + " " + employee.getPosition();
         ui->listWidget->addItem(displayText);
     }
 }

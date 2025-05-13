@@ -347,6 +347,6 @@ C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.h
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/addEmployeeDialog.cpp
  uic:ui_addEmployeeDialog.h
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/employee.cpp
+C:/Users/Laptop HP Elitebook/Documents/companyMenagment/main.cpp
 C:/Users/Laptop HP Elitebook/Documents/companyMenagment/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/Laptop HP Elitebook/Documents/companyMenagment/main.cpp

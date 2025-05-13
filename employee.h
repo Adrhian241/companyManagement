@@ -6,13 +6,17 @@ class Employee
 private:
     QString name;
     QString surname;
+    int age;
+    QString position;
 
 public:
     Employee();
-    Employee(QString name,QString surname);
+    Employee(QString name,QString surname,int age,QString position);
     ~Employee();
     QString getName();
     QString getSurname();
+    int getAge() const;
+    QString getPosition();
 
 };
 
