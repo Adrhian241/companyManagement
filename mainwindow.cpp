@@ -50,4 +50,26 @@ void MainWindow::updateEmployeeList()
         ui->listWidget->addItem(displayText);
     }
 }
+void MainWindow::on_pushButtonDelete_clicked(){
+
+    QListWidgetItem *item = ui->listWidget->currentItem();
+    if (item) {
+        // Znalezienie indeksu zaznaczonego elementu w QListWidget
+        int rowIndex = ui->listWidget->row(item);
+
+        // Usunięcie pracownika z listy employeeList na podstawie indeksu
+        employeeList.erase(employeeList.begin() + rowIndex);
+
+        // Usuwamy element z QListWidget
+        delete item;
+
+        // Zaktualizowanie widoku w QListWidget
+        updateEmployeeList();
+    } else {
+        // Jeśli nie zaznaczono elementu, wyświetl komunikat
+        QMessageBox::warning(this, "Brak zaznaczenia", "Proszę zaznaczyć element do usunięcia.");
+    }
+}
+
+
 
