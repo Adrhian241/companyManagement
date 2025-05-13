@@ -3,6 +3,7 @@
 
 #include "employee.h"
 #include <QMainWindow>
+#include <QlistWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,6 +21,7 @@ public:
 
 private slots:
     void on_pushButtonAdd_clicked();
+    void on_pushButtonDelete_clicked();
 
 private:
     Ui::MainWindow *ui;
