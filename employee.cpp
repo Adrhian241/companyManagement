@@ -9,10 +9,12 @@ Employee::~Employee()
 {
 
 }
-Employee::Employee(QString name,QString surname)
+Employee::Employee(QString name, QString surname, int age, QString position)
 {
     this->name = name;
     this->surname = surname;
+    this->age=age;
+    this->position = position;
 }
 QString Employee::getName()
 {
@@ -22,4 +24,11 @@ QString Employee::getSurname()
 {
     return surname;
 }
-
+int Employee::getAge()const
+{
+    return age;
+}
+QString Employee::getPosition()
+{
+    return position;
+}

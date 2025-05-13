@@ -6,6 +6,13 @@ AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
     , ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    ui->comboBoxPosition->addItem("Kierownik");
+    ui->comboBoxPosition->addItem("Księgowy /a");
+    ui->comboBoxPosition->addItem("Pracownik IT");
+    ui->comboBoxPosition->addItem("Zarząd");
+
+    ui->spinBoxAge->setRange(18, 100);
+    ui->spinBoxAge->setValue(30); // domyślna wartość
 }
 
 AddEmployeeDialog::~AddEmployeeDialog()
@@ -21,4 +28,12 @@ QString AddEmployeeDialog::getName() const
 QString AddEmployeeDialog::getSurname() const
 {
     return ui->lineEditSurname->text();
+}
+int AddEmployeeDialog::getAge() const
+{
+    return ui->spinBoxAge->value();
+}
+QString AddEmployeeDialog::getPosition()const
+{
+    return ui->comboBoxPosition->currentText();
 }

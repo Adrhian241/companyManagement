@@ -19,6 +19,10 @@ public:
 
     QString getName() const;
     QString getSurname() const;
+    int getAge()const;
+    QString getPosition()const;
+private slots:
+
 
 private:
     Ui::Dialog *ui;
