@@ -3,7 +3,7 @@
 
 AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
     : QDialog(parent)
-    , ui(new Ui::Dialog)
+    , ui(new Ui::dialogAdd)
 {
     ui->setupUi(this);
     ui->comboBoxPosition->addItem("Kierownik");

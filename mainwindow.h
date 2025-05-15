@@ -23,6 +23,10 @@ private slots:
     void on_pushButtonAdd_clicked();
     void on_pushButtonDelete_clicked();
 
+    //void on_pushButtonDelete_2_clicked();
+
+    void on_pushButtonEdit_clicked();
+
 private:
     Ui::MainWindow *ui;
     std::vector<Employee> employeeList; // Lista pracowników
