@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "employee.h"
 #include "addEmployeeDialog.h"
+#include "editEmployeeDialog.h"
 #include <QMessageBox>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -73,4 +74,63 @@ void MainWindow::on_pushButtonDelete_clicked(){
 }
 
 
+
+
+
+void MainWindow::on_pushButtonEdit_clicked()
+{
+    int item = ui->listWidget->currentRow();
+
+    //Sprawdzenie czy wybrano pracownika
+    if(item < 0 || item >= static_cast<int>(employeeList.size())){
+        QMessageBox::warning(this,"Blad","Zaznacz jednego pracownika do edycji");
+        return;
+    }
+
+    Employee &employee = employeeList[item];
+    EditEmployeeDialog dialog(this);
+
+    dialog.setCurrentValues(employee.getName(),employee.getSurname(),employee.getAge(),employee.getPosition());
+
+    if(dialog.exec()== QDialog::Accepted){
+        QString newName = employee.getName();
+        QString newSurname = employee.getSurname();
+        int newAge = employee.getAge();
+        QString newPosition = employee.getPosition();
+        //Przypisanie aktualnych wartości do zmiennych
+
+        bool wasChanged = false;//Flaga do sprawdzenia czy wprowadzono zmiany
+
+        if(dialog.isNameChanged()){ //Sprawdzenie czy checkbox jest zaznaczony
+            newName = dialog.getNewName();
+            wasChanged = true;
+        }
+
+        if(dialog.isSurnameChanged()){
+            newSurname = dialog.getNewSurname();
+             wasChanged = true;
+        }
+
+        if(dialog.isAgeChanged()){
+            newAge = dialog.getNewAge();
+             wasChanged = true;
+        }
+
+        if(dialog.isPositionChanged()){
+            newPosition = dialog.getNewPosition();
+             wasChanged = true;
+        }
+
+        //Przypisanie zmienionych wartości dla wybranego wcześniej pracownika
+        employee = Employee(newName,newSurname,newAge,newPosition);
+        updateEmployeeList();
+
+        if(wasChanged){ //Sprawdzenie czy wprowadzono zmiany
+            QMessageBox::warning(this,"Komunikat","Zmiany zostały wprowadzone pomyślnie");
+        }else{
+            QMessageBox::warning(this,"Komunikat","Nie wprowadzono zmian");
+        }
+    }
+
+}
 

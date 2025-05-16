@@ -24,11 +24,11 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_Dialog
+class Ui_dialogAdd
 {
 public:
     QDialogButtonBox *buttonBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
     QLabel *label;
@@ -41,40 +41,40 @@ public:
     QSpinBox *spinBoxAge;
     QComboBox *comboBoxPosition;
 
-    void setupUi(QDialog *Dialog)
+    void setupUi(QDialog *dialogAdd)
     {
-        if (Dialog->objectName().isEmpty())
-            Dialog->setObjectName("Dialog");
-        Dialog->resize(400, 300);
-        buttonBox = new QDialogButtonBox(Dialog);
+        if (dialogAdd->objectName().isEmpty())
+            dialogAdd->setObjectName("dialogAdd");
+        dialogAdd->resize(400, 300);
+        buttonBox = new QDialogButtonBox(dialogAdd);
         buttonBox->setObjectName("buttonBox");
         buttonBox->setGeometry(QRect(30, 240, 341, 32));
         buttonBox->setOrientation(Qt::Orientation::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);
-        widget = new QWidget(Dialog);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(120, 50, 184, 122));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(dialogAdd);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(120, 50, 184, 122));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
 
         verticalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
 
         verticalLayout_2->addWidget(label_2);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
 
         verticalLayout_2->addWidget(label_3);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName("label_4");
 
         verticalLayout_2->addWidget(label_4);
@@ -84,22 +84,22 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lineEditSurname = new QLineEdit(widget);
+        lineEditSurname = new QLineEdit(layoutWidget);
         lineEditSurname->setObjectName("lineEditSurname");
 
         verticalLayout->addWidget(lineEditSurname);
 
-        lineEditName = new QLineEdit(widget);
+        lineEditName = new QLineEdit(layoutWidget);
         lineEditName->setObjectName("lineEditName");
 
         verticalLayout->addWidget(lineEditName);
 
-        spinBoxAge = new QSpinBox(widget);
+        spinBoxAge = new QSpinBox(layoutWidget);
         spinBoxAge->setObjectName("spinBoxAge");
 
         verticalLayout->addWidget(spinBoxAge);
 
-        comboBoxPosition = new QComboBox(widget);
+        comboBoxPosition = new QComboBox(layoutWidget);
         comboBoxPosition->setObjectName("comboBoxPosition");
 
         verticalLayout->addWidget(comboBoxPosition);
@@ -108,26 +108,26 @@ public:
         horizontalLayout->addLayout(verticalLayout);
 
 
-        retranslateUi(Dialog);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, Dialog, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, Dialog, qOverload<>(&QDialog::reject));
+        retranslateUi(dialogAdd);
+        QObject::connect(buttonBox, &QDialogButtonBox::accepted, dialogAdd, qOverload<>(&QDialog::accept));
+        QObject::connect(buttonBox, &QDialogButtonBox::rejected, dialogAdd, qOverload<>(&QDialog::reject));
 
-        QMetaObject::connectSlotsByName(Dialog);
+        QMetaObject::connectSlotsByName(dialogAdd);
     } // setupUi
 
-    void retranslateUi(QDialog *Dialog)
+    void retranslateUi(QDialog *dialogAdd)
     {
-        Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("Dialog", "Imi\304\231:", nullptr));
-        label_2->setText(QCoreApplication::translate("Dialog", "Nazwisko", nullptr));
-        label_3->setText(QCoreApplication::translate("Dialog", "Wiek:", nullptr));
-        label_4->setText(QCoreApplication::translate("Dialog", "Stanowisko:", nullptr));
+        dialogAdd->setWindowTitle(QCoreApplication::translate("dialogAdd", "Dialog", nullptr));
+        label->setText(QCoreApplication::translate("dialogAdd", "Imi\304\231:", nullptr));
+        label_2->setText(QCoreApplication::translate("dialogAdd", "Nazwisko", nullptr));
+        label_3->setText(QCoreApplication::translate("dialogAdd", "Wiek:", nullptr));
+        label_4->setText(QCoreApplication::translate("dialogAdd", "Stanowisko:", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class Dialog: public Ui_Dialog {};
+    class dialogAdd: public Ui_dialogAdd {};
 } // namespace Ui
 
 QT_END_NAMESPACE

@@ -5,7 +5,7 @@
 #include <QDialog>
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class Dialog;
+class dialogAdd;
 }
 QT_END_NAMESPACE
 
@@ -25,7 +25,7 @@ private slots:
 
 
 private:
-    Ui::Dialog *ui;
+    Ui::dialogAdd *ui;
 };
 
 #endif // ADDEMPLOYEEDIALOG_H

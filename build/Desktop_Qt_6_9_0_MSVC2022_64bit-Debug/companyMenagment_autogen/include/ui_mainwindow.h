@@ -14,6 +14,7 @@
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,9 +23,12 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QListWidget *listWidget;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout;
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonDelete;
-    QListWidget *listWidget;
+    QPushButton *pushButtonEdit;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -33,15 +37,30 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        pushButtonAdd = new QPushButton(centralwidget);
-        pushButtonAdd->setObjectName("pushButtonAdd");
-        pushButtonAdd->setGeometry(QRect(102, 210, 141, 29));
-        pushButtonDelete = new QPushButton(centralwidget);
-        pushButtonDelete->setObjectName("pushButtonDelete");
-        pushButtonDelete->setGeometry(QRect(102, 270, 141, 29));
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
         listWidget->setGeometry(QRect(310, 170, 256, 192));
+        layoutWidget = new QWidget(centralwidget);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(110, 170, 171, 191));
+        verticalLayout = new QVBoxLayout(layoutWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButtonAdd = new QPushButton(layoutWidget);
+        pushButtonAdd->setObjectName("pushButtonAdd");
+
+        verticalLayout->addWidget(pushButtonAdd);
+
+        pushButtonDelete = new QPushButton(layoutWidget);
+        pushButtonDelete->setObjectName("pushButtonDelete");
+
+        verticalLayout->addWidget(pushButtonDelete);
+
+        pushButtonEdit = new QPushButton(layoutWidget);
+        pushButtonEdit->setObjectName("pushButtonEdit");
+
+        verticalLayout->addWidget(pushButtonEdit);
+
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -54,6 +73,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "Dodaj pracownika", nullptr));
         pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 pracownika", nullptr));
+        pushButtonEdit->setText(QCoreApplication::translate("MainWindow", "Edycja", nullptr));
     } // retranslateUi
 
 };
