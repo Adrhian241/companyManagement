@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -29,6 +30,8 @@ public:
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonDelete;
     QPushButton *pushButtonEdit;
+    QLineEdit *lineEditSearch;
+    QPushButton *pushButtonSearch;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -61,6 +64,12 @@ public:
 
         verticalLayout->addWidget(pushButtonEdit);
 
+        lineEditSearch = new QLineEdit(centralwidget);
+        lineEditSearch->setObjectName("lineEditSearch");
+        lineEditSearch->setGeometry(QRect(310, 87, 261, 31));
+        pushButtonSearch = new QPushButton(centralwidget);
+        pushButtonSearch->setObjectName("pushButtonSearch");
+        pushButtonSearch->setGeometry(QRect(490, 120, 81, 31));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -74,6 +83,7 @@ public:
         pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "Dodaj pracownika", nullptr));
         pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 pracownika", nullptr));
         pushButtonEdit->setText(QCoreApplication::translate("MainWindow", "Edycja", nullptr));
+        pushButtonSearch->setText(QCoreApplication::translate("MainWindow", "Szukaj", nullptr));
     } // retranslateUi
 
 };

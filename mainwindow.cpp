@@ -134,3 +134,36 @@ void MainWindow::on_pushButtonEdit_clicked()
 
 }
 
+
+void MainWindow::filterEmployees()
+{
+    QString searchText = ui->lineEditSearch->text();
+    bool foundAny = false;
+
+    for (int i = 0; i < ui->listWidget->count(); ++i) {
+        QListWidgetItem *item = ui->listWidget->item(i);
+        bool match = item->text().contains(searchText, Qt::CaseInsensitive);
+        item->setHidden(!match);
+        if (match) foundAny = true;
+    }
+
+    if (!foundAny) {
+        QMessageBox::information(this, "Brak wyników", "Nie znaleziono pracownika o wpisanych danych.");
+        for (int i = 0; i < ui->listWidget->count(); ++i) {
+            ui->listWidget->item(i)->setHidden(false);
+        }
+    }
+    ui->lineEditSearch->clear();
+}
+
+void MainWindow::on_lineEditSearch_returnPressed()
+{
+    filterEmployees();
+}
+
+
+void MainWindow::on_pushButtonSearch_clicked()
+{
+    filterEmployees();
+}
+
