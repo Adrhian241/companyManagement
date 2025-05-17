@@ -48,9 +48,15 @@ void MainWindow::updateEmployeeList()
     // Iterujemy po liście pracowników i dodajemy ich do QListWidget
     for (size_t i = 0; i < employeeList.size(); ++i) {
         Employee employee = employeeList[i]; // Tworzymy kopię elementu
-        QString displayText = employee.getName() + " " + employee.getSurname() + " " + QString::number(employee.getAge()) + " " + employee.getPosition();
+        QString displayText = employee.getName() + "     " + employee.getSurname() + "     " + QString::number(employee.getAge()) + "     " + employee.getPosition();
+
+        //QListWidgetItem *item = new QListWidgetItem(displayText);
+        //item->setTextAlignment(Qt::AlignHCenter | Qt::AlignVCenter); // Przyrównanie elementu do lewej i środka
+        //item->setSizeHint(QSize(ui->listWidget->width(), item->sizeHint().height())); //Wymuszenie do rozciągnięcia itemu na szerokość listy
+
         ui->listWidget->addItem(displayText);
     }
+
 }
 void MainWindow::on_pushButtonDelete_clicked(){
 

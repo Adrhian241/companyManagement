@@ -462,21 +462,21 @@ companyMenagment_autogen/timestamp: \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/CMakeLists.txt \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/addEmployeeDialog.cpp \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/addEmployeeDialog.h \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/editEmployeeDialog.cpp \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/editEmployeeDialog.h \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/employee.cpp \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/employee.h \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/main.cpp \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/mainwindow.cpp \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/mainwindow.h \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/addEmployeeDialog.ui \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/editEmployeeDialog.ui \
-	C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/mainwindow.ui \
+	C:/Users/malym/Documents/companyManagement/CMakeLists.txt \
+	C:/Users/malym/Documents/companyManagement/addEmployeeDialog.cpp \
+	C:/Users/malym/Documents/companyManagement/addEmployeeDialog.h \
+	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake \
+	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
+	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
+	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	C:/Users/malym/Documents/companyManagement/editEmployeeDialog.cpp \
+	C:/Users/malym/Documents/companyManagement/editEmployeeDialog.h \
+	C:/Users/malym/Documents/companyManagement/employee.cpp \
+	C:/Users/malym/Documents/companyManagement/employee.h \
+	C:/Users/malym/Documents/companyManagement/main.cpp \
+	C:/Users/malym/Documents/companyManagement/mainwindow.cpp \
+	C:/Users/malym/Documents/companyManagement/mainwindow.h \
+	C:/Users/malym/Documents/companyManagement/addEmployeeDialog.ui \
+	C:/Users/malym/Documents/companyManagement/editEmployeeDialog.ui \
+	C:/Users/malym/Documents/companyManagement/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

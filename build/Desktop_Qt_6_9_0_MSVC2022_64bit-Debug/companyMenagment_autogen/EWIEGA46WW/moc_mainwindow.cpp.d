@@ -1,4 +1,4 @@
-C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/mainwindow.h \
+C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/malym/Documents/companyManagement/mainwindow.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/QString \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/q20functional.h \
@@ -178,4 +178,4 @@ C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0
   C:/Qt/6.9.0/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtWidgets/qwidget.h \
-  C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/employee.h
+  C:/Users/malym/Documents/companyManagement/employee.h
