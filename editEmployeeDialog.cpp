@@ -35,6 +35,7 @@ void EditEmployeeDialog::setCurrentValues(const QString &name,const QString &sur
 bool EditEmployeeDialog::isNameChanged()const
 {
     return ui->checkBoxName->isChecked();
+
 }
 
 bool EditEmployeeDialog::isSurnameChanged()const

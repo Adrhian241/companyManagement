@@ -24,8 +24,13 @@ private slots:
     void on_pushButtonDelete_clicked();
 
     //void on_pushButtonDelete_2_clicked();
-
     void on_pushButtonEdit_clicked();
+
+
+    void filterEmployees();
+    void on_lineEditSearch_returnPressed();
+
+    void on_pushButtonSearch_clicked();
 
 private:
     Ui::MainWindow *ui;

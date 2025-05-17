@@ -20,7 +20,7 @@ QString Employee::getName()
 {
     return name;
 }
-QString Employee::getSurname()
+QString Employee::getSurname()const
 {
     return surname;
 }
