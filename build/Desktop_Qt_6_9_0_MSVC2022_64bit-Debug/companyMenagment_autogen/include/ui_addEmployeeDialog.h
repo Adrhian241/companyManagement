@@ -15,20 +15,25 @@
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QFormLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_dialogAdd
 {
 public:
-    QDialogButtonBox *buttonBox;
-    QWidget *layoutWidget;
+    QFormLayout *formLayout;
+    QVBoxLayout *verticalLayout_5;
+    QSpacerItem *verticalSpacer;
+    QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
     QLabel *label;
@@ -40,41 +45,52 @@ public:
     QLineEdit *lineEditName;
     QSpinBox *spinBoxAge;
     QComboBox *comboBoxPosition;
+    QSpacerItem *horizontalSpacer;
+    QVBoxLayout *verticalLayout_3;
+    QSpacerItem *verticalSpacer_2;
+    QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *dialogAdd)
     {
         if (dialogAdd->objectName().isEmpty())
             dialogAdd->setObjectName("dialogAdd");
         dialogAdd->resize(400, 300);
-        buttonBox = new QDialogButtonBox(dialogAdd);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(30, 240, 341, 32));
-        buttonBox->setOrientation(Qt::Orientation::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);
-        layoutWidget = new QWidget(dialogAdd);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(120, 50, 184, 122));
-        horizontalLayout = new QHBoxLayout(layoutWidget);
+        formLayout = new QFormLayout(dialogAdd);
+        formLayout->setObjectName("formLayout");
+        verticalLayout_5 = new QVBoxLayout();
+        verticalLayout_5->setObjectName("verticalLayout_5");
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+
+        verticalLayout_5->addItem(verticalSpacer);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_2);
+
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        label = new QLabel(layoutWidget);
+        label = new QLabel(dialogAdd);
         label->setObjectName("label");
 
         verticalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(layoutWidget);
+        label_2 = new QLabel(dialogAdd);
         label_2->setObjectName("label_2");
 
         verticalLayout_2->addWidget(label_2);
 
-        label_3 = new QLabel(layoutWidget);
+        label_3 = new QLabel(dialogAdd);
         label_3->setObjectName("label_3");
 
         verticalLayout_2->addWidget(label_3);
 
-        label_4 = new QLabel(layoutWidget);
+        label_4 = new QLabel(dialogAdd);
         label_4->setObjectName("label_4");
 
         verticalLayout_2->addWidget(label_4);
@@ -84,28 +100,60 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lineEditSurname = new QLineEdit(layoutWidget);
+        lineEditSurname = new QLineEdit(dialogAdd);
         lineEditSurname->setObjectName("lineEditSurname");
 
         verticalLayout->addWidget(lineEditSurname);
 
-        lineEditName = new QLineEdit(layoutWidget);
+        lineEditName = new QLineEdit(dialogAdd);
         lineEditName->setObjectName("lineEditName");
 
         verticalLayout->addWidget(lineEditName);
 
-        spinBoxAge = new QSpinBox(layoutWidget);
+        spinBoxAge = new QSpinBox(dialogAdd);
         spinBoxAge->setObjectName("spinBoxAge");
 
         verticalLayout->addWidget(spinBoxAge);
 
-        comboBoxPosition = new QComboBox(layoutWidget);
+        comboBoxPosition = new QComboBox(dialogAdd);
         comboBoxPosition->setObjectName("comboBoxPosition");
 
         verticalLayout->addWidget(comboBoxPosition);
 
 
         horizontalLayout->addLayout(verticalLayout);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_2);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName("verticalLayout_3");
+        verticalSpacer_2 = new QSpacerItem(20, 80, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+
+        verticalLayout_3->addItem(verticalSpacer_2);
+
+        buttonBox = new QDialogButtonBox(dialogAdd);
+        buttonBox->setObjectName("buttonBox");
+        buttonBox->setOrientation(Qt::Orientation::Horizontal);
+        buttonBox->setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);
+
+        verticalLayout_3->addWidget(buttonBox);
+
+
+        verticalLayout_4->addLayout(verticalLayout_3);
+
+
+        verticalLayout_5->addLayout(verticalLayout_4);
+
+
+        formLayout->setLayout(0, QFormLayout::ItemRole::SpanningRole, verticalLayout_5);
 
 
         retranslateUi(dialogAdd);

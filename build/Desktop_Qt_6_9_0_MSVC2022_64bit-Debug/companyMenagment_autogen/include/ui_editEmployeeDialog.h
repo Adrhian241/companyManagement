@@ -16,19 +16,21 @@
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QFormLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_dialogEdit
 {
 public:
+    QFormLayout *formLayout;
     QDialogButtonBox *buttonBox;
-    QWidget *widget;
+    QVBoxLayout *verticalLayout_5;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QCheckBox *checkBoxName;
@@ -36,7 +38,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QCheckBox *checkBoxSurname;
     QLineEdit *lineEditSurname;
-    QWidget *widget1;
+    QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_2;
     QVBoxLayout *verticalLayout_4;
     QCheckBox *checkBoxAge;
@@ -44,31 +46,35 @@ public:
     QVBoxLayout *verticalLayout_2;
     QCheckBox *checkBoxPosition;
     QComboBox *comboBoxPosition;
+    QSpacerItem *verticalSpacer_2;
+    QSpacerItem *verticalSpacer_3;
 
     void setupUi(QDialog *dialogEdit)
     {
         if (dialogEdit->objectName().isEmpty())
             dialogEdit->setObjectName("dialogEdit");
         dialogEdit->resize(400, 300);
+        formLayout = new QFormLayout(dialogEdit);
+        formLayout->setObjectName("formLayout");
         buttonBox = new QDialogButtonBox(dialogEdit);
         buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(30, 240, 341, 32));
         buttonBox->setOrientation(Qt::Orientation::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);
-        widget = new QWidget(dialogEdit);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(60, 50, 278, 52));
-        horizontalLayout = new QHBoxLayout(widget);
+
+        formLayout->setWidget(3, QFormLayout::ItemRole::SpanningRole, buttonBox);
+
+        verticalLayout_5 = new QVBoxLayout();
+        verticalLayout_5->setObjectName("verticalLayout_5");
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        checkBoxName = new QCheckBox(widget);
+        checkBoxName = new QCheckBox(dialogEdit);
         checkBoxName->setObjectName("checkBoxName");
 
         verticalLayout->addWidget(checkBoxName);
 
-        lineEditName = new QLineEdit(widget);
+        lineEditName = new QLineEdit(dialogEdit);
         lineEditName->setObjectName("lineEditName");
 
         verticalLayout->addWidget(lineEditName);
@@ -78,12 +84,12 @@ public:
 
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
-        checkBoxSurname = new QCheckBox(widget);
+        checkBoxSurname = new QCheckBox(dialogEdit);
         checkBoxSurname->setObjectName("checkBoxSurname");
 
         verticalLayout_3->addWidget(checkBoxSurname);
 
-        lineEditSurname = new QLineEdit(widget);
+        lineEditSurname = new QLineEdit(dialogEdit);
         lineEditSurname->setObjectName("lineEditSurname");
 
         verticalLayout_3->addWidget(lineEditSurname);
@@ -91,20 +97,23 @@ public:
 
         horizontalLayout->addLayout(verticalLayout_3);
 
-        widget1 = new QWidget(dialogEdit);
-        widget1->setObjectName("widget1");
-        widget1->setGeometry(QRect(60, 130, 281, 52));
-        horizontalLayout_2 = new QHBoxLayout(widget1);
+
+        verticalLayout_5->addLayout(horizontalLayout);
+
+        verticalSpacer = new QSpacerItem(20, 10, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+
+        verticalLayout_5->addItem(verticalSpacer);
+
+        horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName("verticalLayout_4");
-        checkBoxAge = new QCheckBox(widget1);
+        checkBoxAge = new QCheckBox(dialogEdit);
         checkBoxAge->setObjectName("checkBoxAge");
 
         verticalLayout_4->addWidget(checkBoxAge);
 
-        spinBoxAge = new QSpinBox(widget1);
+        spinBoxAge = new QSpinBox(dialogEdit);
         spinBoxAge->setObjectName("spinBoxAge");
 
         verticalLayout_4->addWidget(spinBoxAge);
@@ -114,18 +123,32 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        checkBoxPosition = new QCheckBox(widget1);
+        checkBoxPosition = new QCheckBox(dialogEdit);
         checkBoxPosition->setObjectName("checkBoxPosition");
 
         verticalLayout_2->addWidget(checkBoxPosition);
 
-        comboBoxPosition = new QComboBox(widget1);
+        comboBoxPosition = new QComboBox(dialogEdit);
         comboBoxPosition->setObjectName("comboBoxPosition");
 
         verticalLayout_2->addWidget(comboBoxPosition);
 
 
         horizontalLayout_2->addLayout(verticalLayout_2);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_2);
+
+
+        formLayout->setLayout(1, QFormLayout::ItemRole::SpanningRole, verticalLayout_5);
+
+        verticalSpacer_2 = new QSpacerItem(20, 50, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+
+        formLayout->setItem(0, QFormLayout::ItemRole::SpanningRole, verticalSpacer_2);
+
+        verticalSpacer_3 = new QSpacerItem(20, 60, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
+
+        formLayout->setItem(2, QFormLayout::ItemRole::SpanningRole, verticalSpacer_3);
 
 
         retranslateUi(dialogEdit);
