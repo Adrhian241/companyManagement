@@ -6,6 +6,7 @@ Główne funkcje projektu
 - ✔ Usuwanie wybranego pracownika
 - ✔ Wyszukiwanie pracownika
 - ✔ Edycja danych pracownika
+- ✔ Dynamiczny interfejs
 - ❌ Zapisanie do pliku
 - ❌ Odczyt do pliku
 - ❌ Dziedziczenie po innym pracowniku
