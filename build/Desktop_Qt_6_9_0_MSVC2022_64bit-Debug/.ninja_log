@@ -1,99 +1,54 @@
-# ninja log v6
-49	1467	7693454152294723	companyMenagment_autogen/timestamp	783f4d36becc56df
-49	1467	7693454152294723	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-49	1467	7693454152294723	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-49	1467	7693454152294723	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-1499	10122	7693454154118225	CMakeFiles/companyMenagment.dir/employee.cpp.obj	2079f6738deaf033
-1488	10151	7693454153962024	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
-1481	10180	7693454153805792	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
-1504	10241	7693454154118225	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-1510	10334	7693454154118225	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-1493	10722	7693454153962024	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-10723	11389	7693454246354702	companyMenagment.exe	29369333affe6060
-94	749	7693466406968871	companyMenagment_autogen/timestamp	783f4d36becc56df
-94	749	7693466406968871	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-94	749	7693466406968871	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-94	749	7693466406968871	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-751	10250	7693466407973442	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
-755	10273	7693466408013342	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
-767	10295	7693466408123047	CMakeFiles/companyMenagment.dir/employee.cpp.obj	2079f6738deaf033
-772	10332	7693466408182874	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-778	10360	7693466408241744	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-761	11081	7693466408073169	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-11082	11543	7693466511284564	companyMenagment.exe	29369333affe6060
-157	1220	7693467791710124	companyMenagment_autogen/timestamp	783f4d36becc56df
-157	1220	7693467791710124	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-157	1220	7693467791710124	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-157	1220	7693467791710124	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-1230	10420	7693467793272359	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
-1224	10442	7693467793202531	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
-1248	10469	7693467793438305	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-1242	10503	7693467793382073	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-1236	11730	7693467793322225	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-11731	12230	7693467898277732	companyMenagment.exe	29369333affe6060
-131	428	7693468674180765	companyMenagment_autogen/timestamp	783f4d36becc56df
-131	428	7693468674180765	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-131	428	7693468674180765	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-131	428	7693468674180765	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-438	7210	7693468677251517	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-445	7236	7693468677325416	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-432	8531	7693468677191696	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-8531	8912	7693468758183025	companyMenagment.exe	29369333affe6060
-92	321	7693470545988242	companyMenagment_autogen/timestamp	783f4d36becc56df
-92	321	7693470545988242	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-92	321	7693470545988242	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-92	321	7693470545988242	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-334	5715	7693470548381457	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-328	5740	7693470548349891	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-324	6545	7693470548300019	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-6545	6917	7693470610521432	companyMenagment.exe	29369333affe6060
-178	2116	7693472791924560	companyMenagment_autogen/timestamp	783f4d36becc56df
-178	2116	7693472791924560	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-178	2116	7693472791924560	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-178	2116	7693472791924560	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-2126	13787	7693472797224501	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
-2138	13814	7693472797380746	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-2120	13838	7693472797224501	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
-2144	13872	7693472797380746	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-2132	15021	7693472797380746	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-15022	15499	7693472926272884	companyMenagment.exe	29369333affe6060
-142	416	7693474966659739	companyMenagment_autogen/timestamp	783f4d36becc56df
-142	416	7693474966659739	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-142	416	7693474966659739	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-142	416	7693474966659739	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-424	7109	7693474969483028	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-430	7132	7693474969542873	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-419	8092	7693474969433156	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-8093	8439	7693475046176734	companyMenagment.exe	29369333affe6060
-161	448	7693475537691288	companyMenagment_autogen/timestamp	783f4d36becc56df
-161	448	7693475537691288	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-161	448	7693475537691288	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-161	448	7693475537691288	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-463	7130	7693475540707155	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-458	7154	7693475540647234	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-452	8634	7693475540597360	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-8635	9033	7693475622429101	companyMenagment.exe	29369333affe6060
-126	420	7693477996373500	companyMenagment_autogen/timestamp	783f4d36becc56df
-126	420	7693477996373500	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-126	420	7693477996373500	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-126	420	7693477996373500	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-430	7590	7693477999415282	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-436	7616	7693477999481739	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-424	8990	7693477999355450	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-8991	9460	7693478085032641	companyMenagment.exe	29369333affe6060
-80	290	7693480114171815	companyMenagment_autogen/timestamp	783f4d36becc56df
-80	290	7693480114171815	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-80	290	7693480114171815	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-80	290	7693480114171815	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-304	6049	7693480116408545	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-298	6077	7693480116348714	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-293	6910	7693480116298826	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-6910	7254	7693480182471549	companyMenagment.exe	29369333affe6060
-85	324	7693483690426932	companyMenagment_autogen/timestamp	783f4d36becc56df
-85	324	7693483690426932	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-85	324	7693483690426932	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
-85	324	7693483690426932	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
-332	5828	7693483692897495	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
-338	5857	7693483692897495	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
-327	6652	7693483692846721	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
-6653	7037	7693483756112373	companyMenagment.exe	29369333affe6060
+# ninja log v5
+12	166	7693831280966946	companyMenagment_autogen/timestamp	77759ac78ab4fe2
+186	2660	7693831308182616	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
+12	166	7693831280966946	companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+12	166	7693831280966946	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	77759ac78ab4fe2
+549	3200	7693825465896049	CMakeFiles/companyMenagment.dir/employee.cpp.obj	647866e34fb08539
+12	166	7693831280966946	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+534	3192	7693825465806306	CMakeFiles/companyMenagment.dir/main.cpp.obj	a65f8c5ccc688db1
+193	2662	7693831308252401	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	11a55e3833b0959
+201	2659	7693831308142725	CMakeFiles/companyMenagment.dir/attendanceDialog.cpp.obj	159ccf7b64d4c0d4
+526	3198	7693825465866129	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	10dac1fa9add2cbb
+178	3122	7693831312824227	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
+3122	3316	7693831314487331	companyMenagment.exe	a0d3e746d577d82a
+8	29	0	CMakeFiles/clean.additional	baedbe210acaa455
+30	43	0	clean	423d399e6810f01
+13	133	7693832540130158	companyMenagment_autogen/timestamp	77759ac78ab4fe2
+13	133	7693832540130158	companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+13	133	7693832540130158	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	77759ac78ab4fe2
+13	133	7693832540130158	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+160	2581	7693832566783179	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	11a55e3833b0959
+152	2618	7693832567152193	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
+145	3275	7693832573711315	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
+12	139	7693833069478008	companyMenagment_autogen/timestamp	77759ac78ab4fe2
+12	139	7693833069478008	companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+12	139	7693833069478008	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	77759ac78ab4fe2
+12	139	7693833069478008	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+179	2754	7693833097832776	CMakeFiles/companyMenagment.dir/attendanceDialog.cpp.obj	159ccf7b64d4c0d4
+171	2761	7693833097912562	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	11a55e3833b0959
+163	2762	7693833097932506	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
+155	3306	7693833103362081	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
+3306	3499	7693833105002828	companyMenagment.exe	a0d3e746d577d82a
+20	500	7693838182822089	companyMenagment_autogen/timestamp	77759ac78ab4fe2
+20	500	7693838182822089	companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+20	500	7693838182822089	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	77759ac78ab4fe2
+20	500	7693838182822089	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+501	3716	7693838215403373	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	10dac1fa9add2cbb
+522	3733	7693838215552991	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
+532	3735	7693838215612810	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	11a55e3833b0959
+542	3736	7693838215622781	CMakeFiles/companyMenagment.dir/attendanceDialog.cpp.obj	159ccf7b64d4c0d4
+509	4245	7693838220697789	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
+9	30	0	CMakeFiles/clean.additional	baedbe210acaa455
+30	43	0	clean	423d399e6810f01
+12	508	7693838263275357	companyMenagment_autogen/timestamp	77759ac78ab4fe2
+12	508	7693838263275357	companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+12	508	7693838263275357	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	77759ac78ab4fe2
+12	508	7693838263275357	C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	77759ac78ab4fe2
+516	3239	7693838290921450	CMakeFiles/companyMenagment.dir/main.cpp.obj	a65f8c5ccc688db1
+509	3245	7693838290991256	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	10dac1fa9add2cbb
+533	3246	7693838291001232	CMakeFiles/companyMenagment.dir/employee.cpp.obj	647866e34fb08539
+548	3250	7693838291051096	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	11a55e3833b0959
+540	3252	7693838291081017	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
+556	3253	7693838291081017	CMakeFiles/companyMenagment.dir/attendanceDialog.cpp.obj	159ccf7b64d4c0d4
+524	3755	7693838296087143	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
+3755	3955	7693838297633005	companyMenagment.exe	a0d3e746d577d82a

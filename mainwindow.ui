@@ -56,16 +56,19 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1,1,1,8,0,0">
+             <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1,1,1,0,4,0,0">
               <item>
                <spacer name="verticalSpacer">
                 <property name="orientation">
                  <enum>Qt::Orientation::Vertical</enum>
                 </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Preferred</enum>
+                </property>
                 <property name="sizeHint" stdset="0">
                  <size>
                   <width>20</width>
-                  <height>20</height>
+                  <height>30</height>
                  </size>
                 </property>
                </spacer>
@@ -92,14 +95,24 @@
                </widget>
               </item>
               <item>
+               <widget class="QPushButton" name="pushButtonAttendance">
+                <property name="text">
+                 <string>Godziny i wypłata</string>
+                </property>
+               </widget>
+              </item>
+              <item>
                <spacer name="verticalSpacer_2">
                 <property name="orientation">
                  <enum>Qt::Orientation::Vertical</enum>
                 </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Preferred</enum>
+                </property>
                 <property name="sizeHint" stdset="0">
                  <size>
                   <width>20</width>
-                  <height>20</height>
+                  <height>10</height>
                  </size>
                 </property>
                </spacer>
