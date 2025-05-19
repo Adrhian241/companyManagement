@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ninja log v5
 12	166	7693831280966946	companyMenagment_autogen/timestamp	77759ac78ab4fe2
 186	2660	7693831308182616	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	1fb0daacd7f41532
@@ -52,3 +53,17 @@
 556	3253	7693838291081017	CMakeFiles/companyMenagment.dir/attendanceDialog.cpp.obj	159ccf7b64d4c0d4
 524	3755	7693838296087143	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	34a9b9b2e0f78155
 3755	3955	7693838297633005	companyMenagment.exe	a0d3e746d577d82a
+=======
+# ninja log v6
+25	1120	7693492826851460	companyMenagment_autogen/timestamp	783f4d36becc56df
+25	1120	7693492826851460	companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+25	1120	7693492826851460	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/timestamp	783f4d36becc56df
+25	1120	7693492826851460	C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/mocs_compilation.cpp	783f4d36becc56df
+1130	9757	7693492828039297	CMakeFiles/companyMenagment.dir/companyMenagment_autogen/mocs_compilation.cpp.obj	16d72007ac80a673
+1146	9810	7693492828207458	CMakeFiles/companyMenagment.dir/employee.cpp.obj	2079f6738deaf033
+1135	9845	7693492828051211	CMakeFiles/companyMenagment.dir/main.cpp.obj	63a11bad90403801
+1172	9926	7693492828363639	CMakeFiles/companyMenagment.dir/addEmployeeDialog.cpp.obj	c0b7aeb8d71d30ee
+1178	10134	7693492828519859	CMakeFiles/companyMenagment.dir/editEmployeeDialog.cpp.obj	4dd60b1ac67c7ab6
+1141	11074	7693492828051211	CMakeFiles/companyMenagment.dir/mainwindow.cpp.obj	68ae5d9fdb6dc7ac
+11074	11630	7693492927485486	companyMenagment.exe	29369333affe6060
+>>>>>>> main
