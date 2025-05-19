@@ -30,6 +30,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         editEmployeeDialog.ui
         editEmployeeDialog.cpp
         editEmployeeDialog.h
+        attendanceDialog.h attendanceDialog.cpp attendanceDialog.ui
 
     )
 # Define target properties for Android with Qt 6 as:

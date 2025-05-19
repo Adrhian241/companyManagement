@@ -16,7 +16,7 @@ Employee::Employee(QString name, QString surname, int age, QString position)
     this->age=age;
     this->position = position;
 }
-QString Employee::getName()
+QString Employee::getName() const
 {
     return name;
 }

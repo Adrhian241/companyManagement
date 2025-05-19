@@ -1,4 +1,4 @@
-C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/EWIEGA46WW/moc_editEmployeeDialog.cpp: C:/Users/Laptop\ HP\ Elitebook/Documents/companyMenagment/editEmployeeDialog.h \
+C:/Users/malym/Documents/companyManagement/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/companyMenagment_autogen/EWIEGA46WW/moc_editEmployeeDialog.cpp: C:/Users/malym/Documents/companyManagement/editEmployeeDialog.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/msvc2022_64/include/QtCore/q20iterator.h \

@@ -13,7 +13,7 @@ public:
     Employee();
     Employee(QString name,QString surname,int age,QString position);
     ~Employee();
-    QString getName();
+    QString getName() const;
     QString getSurname() const;
     int getAge() const;
     QString getPosition();

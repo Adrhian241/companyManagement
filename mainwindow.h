@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QlistWidget>
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -37,11 +38,14 @@ private slots:
 
     void on_pushButtonClear_clicked();
 
+    void on_pushButtonAttendance_clicked();
+
 private:
 
     Ui::MainWindow *ui;
     std::vector<Employee> employeeList; // Lista pracowników
     void updateEmployeeList();
-
+    std::vector<std::array<int, 7>> workHours;
+    std::vector<double> hourlyRate;
 };
 #endif // MAINWINDOW_H

@@ -40,6 +40,7 @@ public:
     QPushButton *pushButtonAdd;
     QPushButton *pushButtonDelete;
     QPushButton *pushButtonEdit;
+    QPushButton *pushButtonAttendance;
     QSpacerItem *verticalSpacer_2;
     QPushButton *pushButtonSave;
     QPushButton *pushButtonLoad;
@@ -83,7 +84,7 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        verticalSpacer = new QSpacerItem(20, 30, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
 
         verticalLayout->addItem(verticalSpacer);
 
@@ -102,7 +103,12 @@ public:
 
         verticalLayout->addWidget(pushButtonEdit);
 
-        verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+        pushButtonAttendance = new QPushButton(centralwidget);
+        pushButtonAttendance->setObjectName("pushButtonAttendance");
+
+        verticalLayout->addWidget(pushButtonAttendance);
+
+        verticalSpacer_2 = new QSpacerItem(20, 10, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Preferred);
 
         verticalLayout->addItem(verticalSpacer_2);
 
@@ -120,7 +126,7 @@ public:
         verticalLayout->setStretch(1, 1);
         verticalLayout->setStretch(2, 1);
         verticalLayout->setStretch(3, 1);
-        verticalLayout->setStretch(4, 8);
+        verticalLayout->setStretch(5, 4);
 
         horizontalLayout_2->addLayout(verticalLayout);
 
@@ -216,6 +222,7 @@ public:
         pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "Dodaj pracownika", nullptr));
         pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 pracownika", nullptr));
         pushButtonEdit->setText(QCoreApplication::translate("MainWindow", "Edycja", nullptr));
+        pushButtonAttendance->setText(QCoreApplication::translate("MainWindow", "Godziny i wyp\305\202ata", nullptr));
         pushButtonSave->setText(QCoreApplication::translate("MainWindow", "Zapisz do pliku", nullptr));
         pushButtonLoad->setText(QCoreApplication::translate("MainWindow", "Wczytaj z pliku", nullptr));
         pushButtonClear->setText(QCoreApplication::translate("MainWindow", "Wyczy\305\233\304\207 filtr ", nullptr));

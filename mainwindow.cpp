@@ -3,6 +3,7 @@
 #include "employee.h"
 #include "addEmployeeDialog.h"
 #include "editEmployeeDialog.h"
+#include "attendanceDialog.h"
 #include <QMessageBox>
 #include <QFileDialog>
 MainWindow::MainWindow(QWidget *parent)
@@ -34,6 +35,8 @@ void MainWindow::on_pushButtonAdd_clicked()
 
     // Dodawanie pracownika do listy
     employeeList.push_back(newEmployee);
+    workHours.push_back({0, 0, 0, 0, 0, 0, 0});
+    hourlyRate.push_back(0.0);
 
     // Aktualizacja QListWidget
     updateEmployeeList();
@@ -68,6 +71,8 @@ void MainWindow::on_pushButtonDelete_clicked(){
 
         // Usunięcie pracownika z listy employeeList na podstawie indeksu
         employeeList.erase(employeeList.begin() + rowIndex);
+        workHours.erase(workHours.begin() + rowIndex);
+        hourlyRate.erase(hourlyRate.begin() + rowIndex);
 
         // Usuwamy element z QListWidget
         delete item;
@@ -229,4 +234,19 @@ void MainWindow::on_pushButtonSave_clicked()//wczytuje z pliku dane oddzielone s
 
 
 
+
+
+void MainWindow::on_pushButtonAttendance_clicked()
+{
+    if(workHours.size()!= employeeList.size()){
+        workHours.resize(employeeList.size(),{0,0,0,0,0,0,0});
+    }
+    if(hourlyRate.size()!=employeeList.size()){
+        hourlyRate.resize(employeeList.size(),0.0);
+    }
+
+    attendanceDialog dialog(employeeList,workHours,hourlyRate,this);
+    dialog.exec();
+
+}
 
