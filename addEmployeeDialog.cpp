@@ -6,10 +6,14 @@ AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
     , ui(new Ui::dialogAdd)
 {
     ui->setupUi(this);
-    ui->comboBoxPosition->addItem("Kierownik");
-    ui->comboBoxPosition->addItem("Księgowy /a");
-    ui->comboBoxPosition->addItem("Pracownik IT");
-    ui->comboBoxPosition->addItem("Zarząd");
+    ui->comboBoxPosition->addItem("Prezes_zarządu");
+    ui->comboBoxPosition->addItem("Menedżer");
+    ui->comboBoxPosition->addItem("Księgowy");
+    ui->comboBoxPosition->addItem("Programista");
+    ui->comboBoxPosition->addItem("Logistyk");
+    ui->comboBoxPosition->addItem("Analityk_finansowy");
+    ui->comboBoxPosition->addItem("Inżynier_danych");
+    ui->comboBoxPosition->addItem("Administrator_sieci");
 
     ui->spinBoxAge->setRange(18, 100);
     ui->spinBoxAge->setValue(30); // domyślna wartość

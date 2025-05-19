@@ -4,6 +4,7 @@
 #include "addEmployeeDialog.h"
 #include "editEmployeeDialog.h"
 #include <QMessageBox>
+#include <QFileDialog>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -78,10 +79,6 @@ void MainWindow::on_pushButtonDelete_clicked(){
         QMessageBox::warning(this, "Brak zaznaczenia", "Proszę zaznaczyć element do usunięcia.");
     }
 }
-
-
-
-
 
 void MainWindow::on_pushButtonEdit_clicked()
 {
@@ -159,7 +156,7 @@ void MainWindow::filterEmployees()
             ui->listWidget->item(i)->setHidden(false);
         }
     }
-    ui->lineEditSearch->clear();
+
 }
 
 void MainWindow::on_lineEditSearch_returnPressed()
@@ -167,9 +164,69 @@ void MainWindow::on_lineEditSearch_returnPressed()
     filterEmployees();
 }
 
-
 void MainWindow::on_pushButtonSearch_clicked()
 {
     filterEmployees();
 }
+
+void MainWindow::on_pushButtonClear_clicked()
+{
+    ui->lineEditSearch->clear();
+    for (int i = 0; i < ui->listWidget->count(); ++i)
+    {
+        ui->listWidget->item(i)->setHidden(false);
+    }
+}
+
+void MainWindow::on_pushButtonLoad_clicked()
+//jest ustawione że przy wczytaniu danych, lista się nie czyści z poprzednich wpisanych pracowników
+//ale mozna to latwo zmienic tylko nie wiedziałem jak to chcemy zrobic
+//można dodać ew bledy jak ktos wpisze stringa jako wiek czy cos
+{
+    QString filePath = QFileDialog::getOpenFileName(this, "Wczytaj listę pracowników", "", "Pliki tekstowe (*.txt)");
+    if (filePath.isEmpty()) return;
+
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QMessageBox::warning(this, "Błąd", "Nie można wczytać pliku!");
+        return;
+    }
+
+    QTextStream in(&file);
+    while( !in.atEnd())
+    {
+        QString line=in.readLine();
+        Employee employee ;
+        employee.fromFileString(line);
+        employeeList.push_back(employee);
+    }
+    file.close();
+    updateEmployeeList();
+    QMessageBox::information(this, "Sukces", "Dane zostały wczytane!");
+}
+
+
+void MainWindow::on_pushButtonSave_clicked()//wczytuje z pliku dane oddzielone spacją zapisane linijka po linijce(jedna linijka dla jednego pracownika)(pliki.txt)
+{
+    QString filePath = QFileDialog::getSaveFileName(this, "Zapisz listę pracowników", "", "Pliki tekstowe (*.txt)");
+    if(filePath.isEmpty())return;
+
+    QFile file(filePath);
+    if(!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    {
+        QMessageBox::warning(this,"Błąd","Nie można zapisać do pliku!");
+        return;
+    }
+
+    QTextStream out(&file);
+    for(const Employee &employee : employeeList)
+    {
+        out << employee.toFileString() <<"\n";
+    }
+    file.close();
+    QMessageBox::information(this, "Sukces", "Dane zostały zapisane!");
+}
+
+
+
 
