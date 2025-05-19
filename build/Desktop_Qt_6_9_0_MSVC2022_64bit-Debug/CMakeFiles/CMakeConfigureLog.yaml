@@ -63,8 +63,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-anh2vr"
-      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-anh2vr"
+      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hlq1yi"
+      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hlq1yi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -74,11 +74,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-anh2vr'
+        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hlq1yi'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_0e9f0
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_0e9f0.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_0e9f0.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_0e9f0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_0e9f0.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_0e9f0.exe /implib:cmTC_0e9f0.lib /pdb:cmTC_0e9f0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_e8487
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_e8487.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_e8487.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e8487.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e8487.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_e8487.exe /implib:cmTC_e8487.lib /pdb:cmTC_e8487.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -124,8 +124,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-aunchi"
-      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-aunchi"
+      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-123moz"
+      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-123moz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -135,13 +135,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-aunchi'
+        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-123moz'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_f87df
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_f87df.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f87df.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-aunchi\\src.cxx"
-        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_f87df.dir/src.cxx.obj 
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_f87df.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f87df.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-aunchi\\src.cxx"
-        C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-aunchi\\src.cxx(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory
+        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_466cf
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_466cf.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_466cf.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-123moz\\src.cxx"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_466cf.dir/src.cxx.obj 
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_466cf.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_466cf.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-123moz\\src.cxx"
+        C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-123moz\\src.cxx(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -159,8 +159,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-kgezax"
-      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-kgezax"
+      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bpopm8"
+      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bpopm8"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -170,14 +170,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-kgezax'
+        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bpopm8'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_a5855
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_a5855.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_a5855.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kgezax\\CheckFunctionExists.cxx"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a5855.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5855.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a5855.exe /implib:cmTC_a5855.lib /pdb:cmTC_a5855.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_a5855.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a5855.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5855.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a5855.exe /implib:cmTC_a5855.lib /pdb:cmTC_a5855.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a5855.dir\\CheckFunctionExists.cxx.obj /out:cmTC_a5855.exe /implib:cmTC_a5855.lib /pdb:cmTC_a5855.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a5855.dir/intermediate.manifest CMakeFiles\\cmTC_a5855.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_b2e0f
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_b2e0f.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_b2e0f.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bpopm8\\CheckFunctionExists.cxx"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b2e0f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b2e0f.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_b2e0f.exe /implib:cmTC_b2e0f.lib /pdb:cmTC_b2e0f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_b2e0f.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b2e0f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b2e0f.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_b2e0f.exe /implib:cmTC_b2e0f.lib /pdb:cmTC_b2e0f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b2e0f.dir\\CheckFunctionExists.cxx.obj /out:cmTC_b2e0f.exe /implib:cmTC_b2e0f.lib /pdb:cmTC_b2e0f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b2e0f.dir/intermediate.manifest CMakeFiles\\cmTC_b2e0f.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: nie można otworzyć pliku "pthreads.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -196,8 +196,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-7tvcud"
-      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-7tvcud"
+      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-6kmgyo"
+      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-6kmgyo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -207,14 +207,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-7tvcud'
+        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-6kmgyo'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_ba244
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_ba244.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_ba244.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-7tvcud\\CheckFunctionExists.cxx"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ba244.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ba244.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_ba244.exe /implib:cmTC_ba244.lib /pdb:cmTC_ba244.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_ba244.exe 
-        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_ba244.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ba244.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_ba244.exe /implib:cmTC_ba244.lib /pdb:cmTC_ba244.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ba244.dir\\CheckFunctionExists.cxx.obj /out:cmTC_ba244.exe /implib:cmTC_ba244.lib /pdb:cmTC_ba244.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ba244.dir/intermediate.manifest CMakeFiles\\cmTC_ba244.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_125b9
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_125b9.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_125b9.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-6kmgyo\\CheckFunctionExists.cxx"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_125b9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_125b9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_125b9.exe /implib:cmTC_125b9.lib /pdb:cmTC_125b9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_125b9.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_125b9.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_125b9.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_125b9.exe /implib:cmTC_125b9.lib /pdb:cmTC_125b9.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_125b9.dir\\CheckFunctionExists.cxx.obj /out:cmTC_125b9.exe /implib:cmTC_125b9.lib /pdb:cmTC_125b9.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_125b9.dir/intermediate.manifest CMakeFiles\\cmTC_125b9.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: nie można otworzyć pliku "pthread.lib"\x0d
         ninja: build stopped: subcommand failed.
         
@@ -238,8 +238,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-9x92k8"
-      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-9x92k8"
+      source: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-f7wu9j"
+      binary: "C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-f7wu9j"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -249,11 +249,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-9x92k8'
+        Change Dir: 'C:/Users/Laptop HP Elitebook/Documents/companyMenagment/build/Desktop_Qt_6_9_0_MSVC2022_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-f7wu9j'
         
-        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_7540c
-        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_7540c.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_7540c.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-9x92k8\\src.cxx"
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_7540c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7540c.dir\\src.cxx.obj  /out:cmTC_7540c.exe /implib:cmTC_7540c.lib /pdb:cmTC_7540c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): C:/PROGRA~1/MICROS~2/2022/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_d054e
+        [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\HostX64\\x64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_d054e.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_d054e.dir\\ /FS -c "C:\\Users\\Laptop HP Elitebook\\Documents\\companyMenagment\\build\\Desktop_Qt_6_9_0_MSVC2022_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f7wu9j\\src.cxx"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_d054e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1443~1.348\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d054e.dir\\src.cxx.obj  /out:cmTC_d054e.exe /implib:cmTC_d054e.lib /pdb:cmTC_d054e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...
