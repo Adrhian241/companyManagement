@@ -17,6 +17,8 @@ public:
     QString getSurname() const;
     int getAge() const;
     QString getPosition();
+    QString toFileString()const;
+    void fromFileString(const QString &line);
 
 };
 

@@ -41,14 +41,14 @@ public:
     QPushButton *pushButtonDelete;
     QPushButton *pushButtonEdit;
     QSpacerItem *verticalSpacer_2;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
+    QPushButton *pushButtonSave;
+    QPushButton *pushButtonLoad;
     QSpacerItem *horizontalSpacer;
     QVBoxLayout *verticalLayout_3;
     QFormLayout *formLayout;
     QLineEdit *lineEditSearch;
     QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
+    QPushButton *pushButtonClear;
     QPushButton *pushButtonSearch;
     QVBoxLayout *verticalLayout_2;
     QSpacerItem *verticalSpacer_5;
@@ -106,15 +106,15 @@ public:
 
         verticalLayout->addItem(verticalSpacer_2);
 
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
+        pushButtonSave = new QPushButton(centralwidget);
+        pushButtonSave->setObjectName("pushButtonSave");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(pushButtonSave);
 
-        pushButton_3 = new QPushButton(centralwidget);
-        pushButton_3->setObjectName("pushButton_3");
+        pushButtonLoad = new QPushButton(centralwidget);
+        pushButtonLoad->setObjectName("pushButtonLoad");
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(pushButtonLoad);
 
         verticalLayout->setStretch(0, 10);
         verticalLayout->setStretch(1, 1);
@@ -143,10 +143,10 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
+        pushButtonClear = new QPushButton(centralwidget);
+        pushButtonClear->setObjectName("pushButtonClear");
 
-        horizontalLayout->addWidget(pushButton);
+        horizontalLayout->addWidget(pushButtonClear);
 
         pushButtonSearch = new QPushButton(centralwidget);
         pushButtonSearch->setObjectName("pushButtonSearch");
@@ -216,9 +216,9 @@ public:
         pushButtonAdd->setText(QCoreApplication::translate("MainWindow", "Dodaj pracownika", nullptr));
         pushButtonDelete->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 pracownika", nullptr));
         pushButtonEdit->setText(QCoreApplication::translate("MainWindow", "Edycja", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Zapisz do pliku(Nie dzia\305\202a)", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Wczytaj z pliku(Nie dzia\305\202a)", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Wyczy\305\233\304\207 filtr (Nie dzia\305\202a)", nullptr));
+        pushButtonSave->setText(QCoreApplication::translate("MainWindow", "Zapisz do pliku", nullptr));
+        pushButtonLoad->setText(QCoreApplication::translate("MainWindow", "Wczytaj z pliku", nullptr));
+        pushButtonClear->setText(QCoreApplication::translate("MainWindow", "Wyczy\305\233\304\207 filtr ", nullptr));
         pushButtonSearch->setText(QCoreApplication::translate("MainWindow", "Szukaj", nullptr));
     } // retranslateUi
 
