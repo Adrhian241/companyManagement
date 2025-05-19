@@ -7,7 +7,9 @@ Główne funkcje projektu
 - ✔ Wyszukiwanie pracownika
 - ✔ Edycja danych pracownika
 - ✔ Dynamiczny interfejs
-- ❌ Zapisanie do pliku
-- ❌ Odczyt do pliku
+- ✔ Zapisanie do pliku
+- ✔ Odczyt do pliku
 - ❌ Dziedziczenie po innym pracowniku
-- ❌ Vector do przechowywania danych
+- ✔ Vector do przechowywania danych
+- ✔ Lista obecności
+- ✔ Kalkulator pensji
