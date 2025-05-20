@@ -18,13 +18,15 @@ public:
     explicit attendanceDialog(const std::vector<Employee>& employees,std::vector<std::array<int, 7>>& workHours,std::vector<double>& hourlyRate ,QWidget *parent = nullptr);
     ~attendanceDialog();
     void updateSalary(int row);
+    void accept() override;
+    void reject() override;
 
 private:
     Ui::attendanceDialog *ui;
     std::vector<std::array<int, 7>>& workHours;
     std::vector<double>& hourlyRate;
-    //std::vector<std::array<int, 7>>& workHoursCopy;
-    //std::vector<double>& hourlyRateCopy;
+    std::vector<std::array<int, 7>> workHoursCopy;
+    std::vector<double> hourlyRateCopy;
     void setupTable(const std::vector<Employee>& employees);
     QString getEmployee(const Employee& emp) const;
 };
