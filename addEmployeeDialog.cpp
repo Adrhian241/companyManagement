@@ -1,5 +1,6 @@
 #include "addEmployeeDialog.h"
 #include "ui_addEmployeeDialog.h"
+#include <QMessageBox>
 
 AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
     : QDialog(parent)
@@ -17,6 +18,12 @@ AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
 
     ui->spinBoxAge->setRange(18, 100);
     ui->spinBoxAge->setValue(30); // domyślna wartość
+
+    QRegularExpression regex("^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\\s-]{1,50}$");
+    auto *validator = new QRegularExpressionValidator(regex, this);
+    ui->lineEditName->setValidator(validator);
+    ui->lineEditSurname->setValidator(validator);
+
 }
 
 AddEmployeeDialog::~AddEmployeeDialog()
@@ -41,3 +48,6 @@ QString AddEmployeeDialog::getPosition()const
 {
     return ui->comboBoxPosition->currentText();
 }
+
+
+
