@@ -20,6 +20,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButtonAdd_clicked()
 {
     AddEmployeeDialog dialog(this);
+    dialog.show();
     if(dialog.exec() == QDialog::Accepted){
     QString name = dialog.getName();
     QString surname = dialog.getSurname();
@@ -97,7 +98,7 @@ void MainWindow::on_pushButtonEdit_clicked()
 
     Employee &employee = employeeList[item];
     EditEmployeeDialog dialog(this);
-
+    dialog.show();
     dialog.setCurrentValues(employee.getName(),employee.getSurname(),employee.getAge(),employee.getPosition());
 
     if(dialog.exec()== QDialog::Accepted){

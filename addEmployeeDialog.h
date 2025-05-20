@@ -23,7 +23,6 @@ public:
     QString getPosition()const;
 private slots:
 
-
 private:
     Ui::dialogAdd *ui;
 };

@@ -5,7 +5,6 @@
 #include <QMainWindow>
 #include <QlistWidget>
 
-
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -47,5 +46,6 @@ private:
     void updateEmployeeList();
     std::vector<std::array<int, 7>> workHours;
     std::vector<double> hourlyRate;
+
 };
 #endif // MAINWINDOW_H

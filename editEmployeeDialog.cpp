@@ -17,6 +17,11 @@ EditEmployeeDialog::EditEmployeeDialog(QWidget *parent)
 
     ui->spinBoxAge->setRange(18, 100);
     ui->spinBoxAge->setValue(30); // domyślna wartość
+
+    QRegularExpression regex("^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\\s-]{1,50}$");
+    auto *validator = new QRegularExpressionValidator(regex, this);
+    ui->lineEditName->setValidator(validator);
+    ui->lineEditSurname->setValidator(validator);
 }
 
 EditEmployeeDialog::~EditEmployeeDialog()
