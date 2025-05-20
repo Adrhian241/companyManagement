@@ -9,7 +9,6 @@ Główne funkcje projektu
 - ✔ Dynamiczny interfejs
 - ✔ Zapisanie do pliku
 - ✔ Odczyt do pliku
-- ❌ Dziedziczenie po innym pracowniku
 - ✔ Vector do przechowywania danych
 - ✔ Lista obecności
 - ✔ Kalkulator pensji
