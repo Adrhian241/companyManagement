@@ -23,13 +23,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(companyMenagment
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        employee.h employee.cpp
         addEmployeeDialog.ui
-        addEmployeeDialog.h
-        addEmployeeDialog.cpp
         editEmployeeDialog.ui
         editEmployeeDialog.cpp
         editEmployeeDialog.h
+        addEmployeeDialog.cpp
+        addEmployeeDialog.h
         attendanceDialog.h attendanceDialog.cpp attendanceDialog.ui
 
     )
@@ -51,7 +50,10 @@ else()
     endif()
 endif()
 
-target_link_libraries(companyMenagment PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(companyMenagment PRIVATE
+  Qt${QT_VERSION_MAJOR}::Widgets
+  Business_logic
+)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -77,3 +79,6 @@ install(TARGETS companyMenagment
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(companyMenagment)
 endif()
+
+add_subdirectory(Business_logic)
+

@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "employee.h"
+#include "Business_logic/employee.h"
 #include "addEmployeeDialog.h"
 #include "editEmployeeDialog.h"
 #include "attendanceDialog.h"
