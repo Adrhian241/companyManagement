@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QTableWidget>
 #include <QMap>
-#include "employee.h"
+#include "Business_logic/employee.h"
 
 namespace Ui {
 class attendanceDialog;

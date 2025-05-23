@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "employee.h"
+#include "Business_logic/employee.h"
 #include <QMainWindow>
 #include <QlistWidget>
 
