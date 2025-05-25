@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "Business_logic/employee.h"
+#include "Business_logic/employeefilemanager.h"
 #include "addEmployeeDialog.h"
 #include "editEmployeeDialog.h"
 #include "attendanceDialog.h"
@@ -192,45 +193,30 @@ void MainWindow::on_pushButtonLoad_clicked()
     QString filePath = QFileDialog::getOpenFileName(this, "Wczytaj listę pracowników", "", "Pliki tekstowe (*.txt)");
     if (filePath.isEmpty()) return;
 
-    QFile file(filePath);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, "Błąd", "Nie można wczytać pliku!");
-        return;
-    }
-
-    QTextStream in(&file);
-    while( !in.atEnd())
+    if (EmployeeFileManager::loadEmployeesFromFile(employeeList, filePath))
     {
-        QString line=in.readLine();
-        Employee employee ;
-        employee.fromFileString(line);
-        employeeList.push_back(employee);
+        updateEmployeeList();
+        QMessageBox::information(this, "Sukces", "Dane zostały wczytane!");
     }
-    file.close();
-    updateEmployeeList();
-    QMessageBox::information(this, "Sukces", "Dane zostały wczytane!");
+    else
+    {
+        QMessageBox::warning(this, "Błąd", "Nie można wczytać pliku!");
+    }
 }
 
-
-void MainWindow::on_pushButtonSave_clicked()//wczytuje z pliku dane oddzielone spacją zapisane linijka po linijce(jedna linijka dla jednego pracownika)(pliki.txt)
+void MainWindow::on_pushButtonSave_clicked()
 {
     QString filePath = QFileDialog::getSaveFileName(this, "Zapisz listę pracowników", "", "Pliki tekstowe (*.txt)");
-    if(filePath.isEmpty())return;
+    if (filePath.isEmpty()) return;
 
-    QFile file(filePath);
-    if(!file.open(QIODevice::WriteOnly | QIODevice::Text))
+    if (EmployeeFileManager::saveEmployeesToFile(employeeList, filePath))
     {
-        QMessageBox::warning(this,"Błąd","Nie można zapisać do pliku!");
-        return;
+        QMessageBox::information(this, "Sukces", "Dane zostały zapisane!");
     }
-
-    QTextStream out(&file);
-    for(const Employee &employee : employeeList)
+    else
     {
-        out << employee.toFileString() <<"\n";
+        QMessageBox::warning(this, "Błąd", "Nie można zapisać do pliku!");
     }
-    file.close();
-    QMessageBox::information(this, "Sukces", "Dane zostały zapisane!");
 }
 
 
