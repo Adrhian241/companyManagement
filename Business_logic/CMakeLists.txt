@@ -14,6 +14,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 add_library(Business_logic STATIC
     employee.cpp
     employee.h
+    employeefilemanager.h
+    employeefilemanager.cpp
 )
 
 target_link_libraries(Business_logic PRIVATE Qt${QT_VERSION_MAJOR}::Core)
