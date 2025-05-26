@@ -5,6 +5,8 @@
 #include "addEmployeeDialog.h"
 #include "editEmployeeDialog.h"
 #include "attendanceDialog.h"
+#include "Business_logic/validator.h"
+#include "Business_logic/exceptionsProject.h"
 #include <QMessageBox>
 #include <QFileDialog>
 MainWindow::MainWindow(QWidget *parent)
@@ -25,6 +27,17 @@ void MainWindow::on_pushButtonAdd_clicked()
     if(dialog.exec() == QDialog::Accepted){
     QString name = dialog.getName();
     QString surname = dialog.getSurname();
+
+    //qDebug() << "Długość imienia:" << name.length();
+    //qDebug() << "Długość imienia:" << surname.length();
+
+        try {
+        Validator::validateName(name);
+        Validator::validateSurname(surname);
+        } catch (const std::exception& exp) {
+            QMessageBox::warning(this,"Blad walidacji",exp.what());
+            return;
+        }
     QString position = dialog.getPosition();
     int age = dialog.getAge();
     if(name.isEmpty()|| surname.isEmpty())
@@ -93,7 +106,7 @@ void MainWindow::on_pushButtonEdit_clicked()
 
     //Sprawdzenie czy wybrano pracownika
     if(item < 0 || item >= static_cast<int>(employeeList.size())){
-        QMessageBox::warning(this,"Blad","Zaznacz jednego pracownika do edycji");
+        QMessageBox::warning(this,"Blad","Zaznacz pracownika do edycji");
         return;
     }
 
@@ -113,12 +126,25 @@ void MainWindow::on_pushButtonEdit_clicked()
 
         if(dialog.isNameChanged()){ //Sprawdzenie czy checkbox jest zaznaczony
             newName = dialog.getNewName();
+            try {
+                Validator::validateName(newName);
+            } catch (const std::exception& exp) {
+                QMessageBox::warning(this,"Blad walidacji",exp.what());
+                return;
+            }
             wasChanged = true;
         }
 
         if(dialog.isSurnameChanged()){
             newSurname = dialog.getNewSurname();
-             wasChanged = true;
+            try {
+                Validator::validateSurname(newSurname);
+            } catch (const std::exception& exp) {
+                QMessageBox::warning(this,"Blad walidacji",exp.what());
+                return;
+            }
+            wasChanged = true;
+
         }
 
         if(dialog.isAgeChanged()){
@@ -148,6 +174,15 @@ void MainWindow::on_pushButtonEdit_clicked()
 void MainWindow::filterEmployees()
 {
     QString searchText = ui->lineEditSearch->text();
+    try {
+        Validator::validateSearchText(searchText);
+    } catch (const std::exception& exp) {
+        QMessageBox::warning(this,"Blad walidacji",exp.what());
+        ui->lineEditSearch->clear();
+        return;
+    }
+    // Sprawdzenie czy wyszukiwany tekst spełnia wymagania
+    // Jeśli nie spełnia to czyszczony jest tekst w pasku wyszukiwania
     bool foundAny = false;
 
     for (int i = 0; i < ui->listWidget->count(); ++i) {

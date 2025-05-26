@@ -21,8 +21,8 @@ AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
 
     QRegularExpression regex("^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\\s-]{1,50}$");
     auto *validator = new QRegularExpressionValidator(regex, this);
-    ui->lineEditName->setValidator(validator);
     ui->lineEditSurname->setValidator(validator);
+    ui->lineEditName->setValidator(validator);
 
 }
 
