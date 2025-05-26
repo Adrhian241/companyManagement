@@ -16,6 +16,8 @@ add_library(Business_logic STATIC
     employee.h
     employeefilemanager.h
     employeefilemanager.cpp
+    exceptionsProject.h
+    validator.h validator.cpp
 )
 
 target_link_libraries(Business_logic PRIVATE Qt${QT_VERSION_MAJOR}::Core)

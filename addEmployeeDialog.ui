@@ -86,10 +86,10 @@
            <item>
             <layout class="QVBoxLayout" name="verticalLayout">
              <item>
-              <widget class="QLineEdit" name="lineEditSurname"/>
+              <widget class="QLineEdit" name="lineEditName"/>
              </item>
              <item>
-              <widget class="QLineEdit" name="lineEditName"/>
+              <widget class="QLineEdit" name="lineEditSurname"/>
              </item>
              <item>
               <widget class="QSpinBox" name="spinBoxAge"/>
