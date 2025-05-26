@@ -35,7 +35,7 @@ void MainWindow::on_pushButtonAdd_clicked()
         Validator::validateName(name);
         Validator::validateSurname(surname);
         } catch (const std::exception& exp) {
-            QMessageBox::warning(this,"Blad walidacji",exp.what());
+            QMessageBox::warning(this,"Nie poprawna długość",exp.what());
             return;
         }
     QString position = dialog.getPosition();
@@ -95,7 +95,7 @@ void MainWindow::on_pushButtonDelete_clicked(){
 
         // Zaktualizowanie widoku w QListWidget
         updateEmployeeList();
-        QMessageBox::warning(this, "Sukces", "Usunięto pracownika");
+        QMessageBox::information(this, "Sukces", "Usunięto pracownika");
     } else {
         // Jeśli nie zaznaczono elementu, wyświetl komunikat
         QMessageBox::warning(this, "Brak zaznaczenia", "Proszę zaznaczyć element do usunięcia.");
@@ -108,7 +108,7 @@ void MainWindow::on_pushButtonEdit_clicked()
 
     //Sprawdzenie czy wybrano pracownika
     if(item < 0 || item >= static_cast<int>(employeeList.size())){
-        QMessageBox::warning(this,"Blad","Zaznacz pracownika do edycji");
+        QMessageBox::warning(this,"Nie wybrano pracownika","Zaznacz pracownika do edycji");
         return;
     }
 
@@ -131,7 +131,7 @@ void MainWindow::on_pushButtonEdit_clicked()
             try {
                 Validator::validateName(newName);
             } catch (const std::exception& exp) {
-                QMessageBox::warning(this,"Blad walidacji",exp.what());
+                QMessageBox::warning(this,"Nie poprawna długość",exp.what());
                 return;
             }
             wasChanged = true;
@@ -142,7 +142,7 @@ void MainWindow::on_pushButtonEdit_clicked()
             try {
                 Validator::validateSurname(newSurname);
             } catch (const std::exception& exp) {
-                QMessageBox::warning(this,"Blad walidacji",exp.what());
+                QMessageBox::warning(this,"Nie poprawna długość",exp.what());
                 return;
             }
             wasChanged = true;
@@ -164,10 +164,13 @@ void MainWindow::on_pushButtonEdit_clicked()
         updateEmployeeList();
 
         if(wasChanged){ //Sprawdzenie czy wprowadzono zmiany
-            QMessageBox::warning(this,"Komunikat","Zmiany zostały wprowadzone pomyślnie");
+            QMessageBox::information(this,"Sukces","Zmiany zostały wprowadzone pomyślnie");
         }else{
-            QMessageBox::warning(this,"Komunikat","Nie wprowadzono zmian");
+            QMessageBox::information(this,"Anulowano","Nie wprowadzono zmian");
         }
+    }
+    else{
+        QMessageBox::information(this,"Anulowano","Nie wprowadzono zmian");
     }
 
 }
@@ -179,7 +182,7 @@ void MainWindow::filterEmployees()
     try {
         Validator::validateSearchText(searchText);
     } catch (const std::exception& exp) {
-        QMessageBox::warning(this,"Blad walidacji",exp.what());
+        QMessageBox::warning(this,"Nie poprawna długość",exp.what());
         ui->lineEditSearch->clear();
         return;
     }

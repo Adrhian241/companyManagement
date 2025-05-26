@@ -7,20 +7,20 @@
 class NameTooLongException : public std::exception{
 public:
     const char* what() const throw(){
-        return "Imie za dlugie - max 30 znakow";
+        return "Imię za długie - max 30 znaków";
     }
 };
 
 class SurnameTooLongException : public std::exception{
 public:
     const char* what() const throw(){
-        return "Nazwisko za dlugie - max 30 znakow";
+        return "Nazwisko za długie - max 30 znaków";
     }
 };
 
 class SearchTextTooLongException : public std::exception{
 public:
     const char* what() const throw(){
-        return "Wyszukiwany tekst za dlugi - max 40 znakow";
+        return "Wyszukiwany tekst za długi - max 40 znaków";
     }
 };
