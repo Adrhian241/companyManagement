@@ -23,7 +23,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButtonAdd_clicked()
 {
     AddEmployeeDialog dialog(this);
-    dialog.show();
+    //dialog.show();
     if(dialog.exec() == QDialog::Accepted){
     QString name = dialog.getName();
     QString surname = dialog.getSurname();
@@ -55,10 +55,11 @@ void MainWindow::on_pushButtonAdd_clicked()
 
     // Aktualizacja QListWidget
     updateEmployeeList();
+    QMessageBox::information(this,"Sukces","Pomyslnie dodano pracownika");
     }
-    // Czyszczenie pól tekstowych
-    //ui->lineEditName->clear();
-    //ui->lineEditSurname->clear();
+    else{
+    QMessageBox::information(this,"Anulowano","Nie dodano pracownika");
+    }
 }
 void MainWindow::updateEmployeeList()
 {
@@ -94,6 +95,7 @@ void MainWindow::on_pushButtonDelete_clicked(){
 
         // Zaktualizowanie widoku w QListWidget
         updateEmployeeList();
+        QMessageBox::warning(this, "Sukces", "Usunięto pracownika");
     } else {
         // Jeśli nie zaznaczono elementu, wyświetl komunikat
         QMessageBox::warning(this, "Brak zaznaczenia", "Proszę zaznaczyć element do usunięcia.");
