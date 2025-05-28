@@ -23,13 +23,9 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButtonAdd_clicked()
 {
     AddEmployeeDialog dialog(this);
-    //dialog.show();
     if(dialog.exec() == QDialog::Accepted){
     QString name = dialog.getName();
     QString surname = dialog.getSurname();
-
-    //qDebug() << "Długość imienia:" << name.length();
-    //qDebug() << "Długość imienia:" << surname.length();
 
         try {
         Validator::validateName(name);
@@ -69,10 +65,6 @@ void MainWindow::updateEmployeeList()
     for (size_t i = 0; i < employeeList.size(); ++i) {
         Employee employee = employeeList[i]; // Tworzymy kopię elementu
         QString displayText = employee.getName() + "     " + employee.getSurname() + "     " + QString::number(employee.getAge()) + "     " + employee.getPosition();
-
-        //QListWidgetItem *item = new QListWidgetItem(displayText);
-        //item->setTextAlignment(Qt::AlignHCenter | Qt::AlignVCenter); // Przyrównanie elementu do lewej i środka
-        //item->setSizeHint(QSize(ui->listWidget->width(), item->sizeHint().height())); //Wymuszenie do rozciągnięcia itemu na szerokość listy
 
         ui->listWidget->addItem(displayText);
     }
@@ -227,8 +219,6 @@ void MainWindow::on_pushButtonClear_clicked()
 
 void MainWindow::on_pushButtonLoad_clicked()
 //jest ustawione że przy wczytaniu danych, lista się nie czyści z poprzednich wpisanych pracowników
-//ale mozna to latwo zmienic tylko nie wiedziałem jak to chcemy zrobic
-//można dodać ew bledy jak ktos wpisze stringa jako wiek czy cos
 {
     QString filePath = QFileDialog::getOpenFileName(this, "Wczytaj listę pracowników", "", "Pliki tekstowe (*.txt)");
     if (filePath.isEmpty()) return;
