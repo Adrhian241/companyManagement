@@ -17,7 +17,7 @@ AddEmployeeDialog::AddEmployeeDialog(QWidget *parent)
     ui->comboBoxPosition->addItem("Administrator_sieci");
 
     ui->spinBoxAge->setRange(18, 100);
-    ui->spinBoxAge->setValue(30); // domyślna wartość
+    ui->spinBoxAge->setValue(30);
 
     QRegularExpression regex("^[A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ\\s-]{1,50}$");
     auto *validator = new QRegularExpressionValidator(regex, this);
@@ -40,10 +40,12 @@ QString AddEmployeeDialog::getSurname() const
 {
     return ui->lineEditSurname->text();
 }
+
 int AddEmployeeDialog::getAge() const
 {
     return ui->spinBoxAge->value();
 }
+
 QString AddEmployeeDialog::getPosition()const
 {
     return ui->comboBoxPosition->currentText();

@@ -16,10 +16,12 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
 }
+
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
 void MainWindow::on_pushButtonAdd_clicked()
 {
     AddEmployeeDialog dialog(this);
@@ -44,12 +46,10 @@ void MainWindow::on_pushButtonAdd_clicked()
 
     Employee newEmployee(name, surname,age,position);
 
-    // Dodawanie pracownika do listy
     employeeList.push_back(newEmployee);
     workHours.push_back({0, 0, 0, 0, 0, 0, 0});
     hourlyRate.push_back(0.0);
 
-    // Aktualizacja QListWidget
     updateEmployeeList();
     QMessageBox::information(this,"Sukces","Pomyslnie dodano pracownika");
     }
@@ -57,39 +57,35 @@ void MainWindow::on_pushButtonAdd_clicked()
     QMessageBox::information(this,"Anulowano","Nie dodano pracownika");
     }
 }
+
 void MainWindow::updateEmployeeList()
 {
-    ui->listWidget->clear(); // Czyścimy QListWidget
+    ui->listWidget->clear();
 
-    // Iterujemy po liście pracowników i dodajemy ich do QListWidget
     for (size_t i = 0; i < employeeList.size(); ++i) {
-        Employee employee = employeeList[i]; // Tworzymy kopię elementu
+        Employee employee = employeeList[i];
         QString displayText = employee.getName() + "     " + employee.getSurname() + "     " + QString::number(employee.getAge()) + "     " + employee.getPosition();
 
         ui->listWidget->addItem(displayText);
     }
 
 }
+
 void MainWindow::on_pushButtonDelete_clicked(){
 
     QListWidgetItem *item = ui->listWidget->currentItem();
     if (item) {
-        // Znalezienie indeksu zaznaczonego elementu w QListWidget
         int rowIndex = ui->listWidget->row(item);
 
-        // Usunięcie pracownika z listy employeeList na podstawie indeksu
         employeeList.erase(employeeList.begin() + rowIndex);
         workHours.erase(workHours.begin() + rowIndex);
         hourlyRate.erase(hourlyRate.begin() + rowIndex);
 
-        // Usuwamy element z QListWidget
         delete item;
 
-        // Zaktualizowanie widoku w QListWidget
         updateEmployeeList();
         QMessageBox::information(this, "Sukces", "Usunięto pracownika");
     } else {
-        // Jeśli nie zaznaczono elementu, wyświetl komunikat
         QMessageBox::warning(this, "Brak zaznaczenia", "Proszę zaznaczyć element do usunięcia.");
     }
 }
@@ -98,7 +94,6 @@ void MainWindow::on_pushButtonEdit_clicked()
 {
     int item = ui->listWidget->currentRow();
 
-    //Sprawdzenie czy wybrano pracownika
     if(item < 0 || item >= static_cast<int>(employeeList.size())){
         QMessageBox::warning(this,"Nie wybrano pracownika","Zaznacz pracownika do edycji");
         return;
@@ -114,11 +109,10 @@ void MainWindow::on_pushButtonEdit_clicked()
         QString newSurname = employee.getSurname();
         int newAge = employee.getAge();
         QString newPosition = employee.getPosition();
-        //Przypisanie aktualnych wartości do zmiennych
 
-        bool wasChanged = false;//Flaga do sprawdzenia czy wprowadzono zmiany
+        bool wasChanged = false;
 
-        if(dialog.isNameChanged()){ //Sprawdzenie czy checkbox jest zaznaczony
+        if(dialog.isNameChanged()){
             newName = dialog.getNewName();
             try {
                 Validator::validateName(newName);
@@ -151,11 +145,10 @@ void MainWindow::on_pushButtonEdit_clicked()
              wasChanged = true;
         }
 
-        //Przypisanie zmienionych wartości dla wybranego wcześniej pracownika
         employee = Employee(newName,newSurname,newAge,newPosition);
         updateEmployeeList();
 
-        if(wasChanged){ //Sprawdzenie czy wprowadzono zmiany
+        if(wasChanged){
             QMessageBox::information(this,"Sukces","Zmiany zostały wprowadzone pomyślnie");
         }else{
             QMessageBox::information(this,"Anulowano","Nie wprowadzono zmian");
@@ -167,7 +160,6 @@ void MainWindow::on_pushButtonEdit_clicked()
 
 }
 
-
 void MainWindow::filterEmployees()
 {
     QString searchText = ui->lineEditSearch->text();
@@ -178,8 +170,7 @@ void MainWindow::filterEmployees()
         ui->lineEditSearch->clear();
         return;
     }
-    // Sprawdzenie czy wyszukiwany tekst spełnia wymagania
-    // Jeśli nie spełnia to czyszczony jest tekst w pasku wyszukiwania
+
     bool foundAny = false;
 
     for (int i = 0; i < ui->listWidget->count(); ++i) {
@@ -218,7 +209,6 @@ void MainWindow::on_pushButtonClear_clicked()
 }
 
 void MainWindow::on_pushButtonLoad_clicked()
-//jest ustawione że przy wczytaniu danych, lista się nie czyści z poprzednich wpisanych pracowników
 {
     QString filePath = QFileDialog::getOpenFileName(this, "Wczytaj listę pracowników", "", "Pliki tekstowe (*.txt)");
     if (filePath.isEmpty()) return;
@@ -248,10 +238,6 @@ void MainWindow::on_pushButtonSave_clicked()
         QMessageBox::warning(this, "Błąd", "Nie można zapisać do pliku!");
     }
 }
-
-
-
-
 
 void MainWindow::on_pushButtonAttendance_clicked()
 {

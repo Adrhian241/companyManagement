@@ -28,21 +28,15 @@ private slots:
     void filterEmployees();
     void on_lineEditSearch_returnPressed();
     void on_pushButtonSearch_clicked();
-
     void on_pushButtonLoad_clicked();
-
     void on_pushButtonSave_clicked();
-
-
-
     void on_pushButtonClear_clicked();
-
     void on_pushButtonAttendance_clicked();
 
 private:
 
     Ui::MainWindow *ui;
-    std::vector<Employee> employeeList; // Lista pracowników
+    std::vector<Employee> employeeList;
     void updateEmployeeList();
     std::vector<std::array<int, 7>> workHours;
     std::vector<double> hourlyRate;
