@@ -28,22 +28,19 @@ QString attendanceDialog::getEmployee(const Employee& emp) const{
     return emp.getName() + " " +emp.getSurname();
 }
 
-
-
 void attendanceDialog::setupTable(const std::vector<Employee>& employees){
-
 
     ui->tableWidget->setRowCount(static_cast<int>(employees.size()));
     for(int row=0;row<static_cast<int>(employees.size());++row){
         const Employee& emp = employees[row];
         QString person = getEmployee(emp);
 
-        ui->tableWidget->setVerticalHeaderItem(row, new QTableWidgetItem(person));      //Dopisanie danych osoby do tabeli
+        ui->tableWidget->setVerticalHeaderItem(row, new QTableWidgetItem(person));
 
         for(int col=0;col<7;++col){
             QSpinBox *spinBox = new QSpinBox;
             spinBox->setRange(0,12);
-            spinBox->setValue(workHoursCopy[row][col]); //Wartość wczytana z vectora
+            spinBox->setValue(workHoursCopy[row][col]);
 
             connect(spinBox, QOverload<int>::of(&QSpinBox::valueChanged), [=](int val){                //[=] = wszystkie zmienne przekazywane są przez wartość
                 workHoursCopy[row][col]=val;
@@ -65,7 +62,7 @@ void attendanceDialog::setupTable(const std::vector<Employee>& employees){
 
         QTableWidgetItem *salary = new QTableWidgetItem;
         salary->setTextAlignment(Qt::AlignCenter);
-        ui->tableWidget->setItem(row,8,salary);   // Wypisanie 'salary' do tabelki
+        ui->tableWidget->setItem(row,8,salary);
         updateSalary(row);
 
     }
@@ -74,7 +71,7 @@ void attendanceDialog::setupTable(const std::vector<Employee>& employees){
 void attendanceDialog::updateSalary(int row){
     int allHours = 0;
     for (int i = 0; i < 7; ++i)
-        allHours += workHoursCopy[row][i];     // Sumowanie ilosci przepracowanych godzin
+        allHours += workHoursCopy[row][i];
 
     double salary = allHours * hourlyRateCopy[row];
     QTableWidgetItem *item = ui->tableWidget->item(row,8);

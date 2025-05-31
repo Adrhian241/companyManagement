@@ -37,7 +37,7 @@ void EditEmployeeDialog::setCurrentValues(const QString &name,const QString &sur
     int index = ui->comboBoxPosition->findText(position);
     if (index != -1) {
         ui->comboBoxPosition->setCurrentIndex(index);
-    }// Sprawdzenie czy element napewno istnieje
+    }
 }
 
 
